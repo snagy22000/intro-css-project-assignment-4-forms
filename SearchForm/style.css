@@ -2,6 +2,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+  line-height: normal !important;
+
 }
 
 body {
@@ -35,7 +37,7 @@ body {
 
 .btn {
 	height: 100%;
-	padding: 12px 10px;
+	padding: 13px 15px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	background-color: #c4c4c4;
@@ -60,3 +62,4 @@ body {
 
 	
 }
+3

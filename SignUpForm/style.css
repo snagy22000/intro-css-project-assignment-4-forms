@@ -11,9 +11,9 @@ body {
 
 .form-container {
 	width: 800px;
-	height: 1060px;
+	height: 940px;
 	background-color: #292F47;
-	margin: auto;
+	margin: 0 auto;
 	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.71);
 }
 
@@ -21,7 +21,7 @@ h1 {
 	text-align: center;
 	color: #fff;
 	padding-top: 80px;
-	margin: 30px 200px;
+	margin: 20px 200px;
 	font-size: 440%;
 	font-weight: 100;
 }
@@ -34,7 +34,7 @@ p {
 }
 
 .form-container form {
-	margin: 100px 220px;
+	margin: 0 220px;
 }
 
 .form-container form input {
@@ -66,24 +66,24 @@ p {
 }
 
 .form-container form .btn-send {
-	margin: 90px 0;
+	margin-top: 90px;
 	background: -webkit-linear-gradient(left, #ED4A5F, #F47B36);
 	background: linear-gradient(to right, #ED4A5F, #F47B36);
 	cursor: pointer;
 }
 
 @media screen and (max-width: 699px) {
-	.form-container {
-		width: 600px;
-		height: 1060px;
+.form-container {
+		width: 100%;
+		height: 100%;
 		background-color: #292F47;
 		box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.71);
 	}
 	h1 {
 		text-align: center;
 		color: #fff;
-		padding-top: 80px;
-		margin: 0px 0px;
+		padding-top: 30px;
+		margin: 0 0;
 		font-size: 350%;
 		font-weight: 100;
 	}
@@ -95,7 +95,7 @@ p {
 		margin-top: 20px;
 	}
 	.form-container form {
-		margin: 100px 60px;
+		margin: 50px 0;
 	}
 	.form-container form input {
 		width: 100%;

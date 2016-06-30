@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Questionarie Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main>
+		<h1><span class="game-text">street jumper</span>online game</h1>
+		<form action="#">
+		
+			<label class="email" for="email">Your email Please! </label>
+			<input id="email" class="email" type="email" required>
+			
+			<legend>Please rate our online game!<br>
+			<input id="check-verygood" type="radio" name="rateit" value="very good" checked>
+			<label  class="rateit" for="check-verygood">very good</label>
+			<input id="check-good" type="radio" name="rateit" value="good" checked>
+			<label class="rateit" for="check-good">good</label>
+			<input id="check-bad" type="radio" name="rateit" value="bad" checked>
+			<label class="rateit" for="check-bad">bad</label>
+			<input id="check-verybad" type="radio" name="rateit" value="very bad" checked>
+			<label class="rateit" for="check-verybad">very bad</label></legend>
+			
+			<legend>Do you have any suggestions to this game! <br>Please leave a message.</legend><br>
+			
+			<input id="check-yes" type="radio" name="comment" value="yes" checked>
+			<label class="rateit" for="check-yes">no</label>
+
+			<input id="check-no" type="radio" name="comment" value="no" checked>
+			<label class="rateit"  for="check-no">yes</label>
+			
+			<textarea name="usercomment" id="usercomment" placeholder="Please use this area for any comment"></textarea>
+			
+			<input id="submit" type="submit" value="Send">
+		
+		</form>
+	</main>
+</body>
+
+</html>
