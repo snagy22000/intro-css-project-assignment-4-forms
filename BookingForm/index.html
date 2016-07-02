@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>BookingForm</title>
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<form action="#">
+			<fieldset>
+				<legend>Contact Information</legend>
+				<input type="text" placeholder="First Name" required>
+				<input type="text" placeholder="Last Name" required>
+				<input type="text" placeholder="E-Mail" required>
+				<input type="text" placeholder="Phone Number">
+				<input type="text" placeholder="Street Address" required>
+				<input type="text" placeholder="Apt./Suite">
+				<input type="text" placeholder="City" required>
+				<input type="text" placeholder="State" required>
+				<input type="text" placeholder="Zip Code" required><br>
+				<input type="checkbox" name="addressconfirm" value="addressconfirm">
+				<span>Please confirm the shipping address!</span>
+				<br>
+				</fieldset>
+
+			<fieldset>
+				<legend>Card Information</legend>
+				<i class="fa fa-cc-visa" aria-hidden="true"></i>
+				<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+				<i class="fa fa-cc-amex" aria-hidden="true"></i>
+				<br>
+				<input type="number" placeholder="Card Number" required>
+				<input type="date" placeholder="Expiration Date" required>
+				<input type="text" placeholder="Card Holder" required>
+
+				<input type="number" placeholder="CCV" required>
+
+				<button id="submit" value="submit"><i class="fa fa-lock" aria-hidden="true"></i> Submit
+				</button>
+
+
+
+			</fieldset>
+		</form>
+
+	</div>
+</body>
+
+</html>

@@ -38,7 +38,8 @@ body {
 
 h1,
 p {
-	text-align: center;
+    	text-align: center;
+
   margin: 50px auto;
 }
 
@@ -47,7 +48,6 @@ p a {
     text-transform: uppercase;
     list-style-type: none;
     text-decoration: none;
-    display: inline-block;
     margin-right: 50px;
     padding: 5px;
     list-style-type: none;
@@ -100,7 +100,7 @@ span {
 
 .submit {
     padding: 10px 20px;
-    background: rgb(48, 48, 255);
+    background: rgba(48, 48, 255, 0.48);
 		font-weight: 700;
     border-radius: 25px;
     width: 500px;

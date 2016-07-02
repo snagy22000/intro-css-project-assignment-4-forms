@@ -1,0 +1,182 @@
+/*-----------------------------------*/
+/* ---------- HTML SETUP----------  */
+/*-----------------------------------*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	/*	border: 1px solid red;*/
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*-----------------------------------*/
+/* ---------- FORM SETUP----------  */
+/*-----------------------------------*/
+
+#wrapper {
+	width: 80%;
+	margin: 30px auto;
+}
+
+form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+fieldset {
+	width: 100%;
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	background: rgba(60, 60, 60, 0.27) url(img/world.png) no-repeat;
+	background-size: cover;
+	border: solid 1px rgb(149, 149, 149);
+	box-shadow: 11px 11px 10px #000;
+}
+
+legend {
+	padding: 15px 20px;
+	background: -webkit-linear-gradient(#47c1d1, #415d60);
+	background: linear-gradient(#47c1d1, #415d60);
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+
+
+
+/*-----------------------------------*/
+/* ---------- INPUT ELEMENT SETUP----------  */
+/*-----------------------------------*/
+
+input[type="checkbox"] {
+	display: inline;
+	margin: 20px 0 0 30px;
+	text-align: center;
+}
+
+input::-webkit-input-placeholder,
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+	display: inline-block;
+	padding: 15px 10px;
+	margin: 5px 30px 5px 30px;
+	color: #757b81;
+	text-align: center;
+	background: #fff;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+input::-moz-placeholder,
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+	display: inline-block;
+	padding: 15px 10px;
+	margin: 5px 30px 5px 30px;
+	color: #757b81;
+	text-align: center;
+	background: #fff;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+input:-ms-input-placeholder,
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+	display: inline-block;
+	padding: 15px 10px;
+	margin: 5px 30px 5px 30px;
+	color: #757b81;
+	text-align: center;
+	background: #fff;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+input::placeholder,
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+	display: inline-block;
+	padding: 15px 10px;
+	margin: 5px 30px 5px 30px;
+	color: #757b81;
+	text-align: center;
+	background: #fff;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+
+span {
+	display: inline;
+	text-align: center;
+	padding: 15px 20px;
+	color: #757b81;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+
+span:hover,
+span:focus {
+	font-size: 1.2em;
+	color: #696969;
+	text-shadow: 5px 5px 10px #757b81;
+}
+
+
+/*-----------------------------------*/
+/* ---------- ICON SETUP----------  */
+/*-----------------------------------*/
+
+.fa {
+	margin: 5px 0px;
+	font-size: 20px;
+}
+
+.fa-cc-visa {
+	color: #0c39cc;
+	background: #fff;
+}
+
+.fa-cc-mastercard {
+	color: #fff;
+	background: -webkit-linear-gradient( left, #ff0000, #ff9e03);
+	background: linear-gradient( to right, #ff0000, #ff9e03);
+}
+
+.fa-cc-amex {
+	color: #83A392;
+	background: #fff
+}
+
+/*-----------------------------------*/
+/* ---------- BUTTON SETUP----------  */
+/*-----------------------------------*/
+
+#submit {
+	width: 40%;
+	display: block;
+	margin: 55px auto 10px auto;
+	padding: 15px 0;
+	background: -webkit-linear-gradient(#47c1d1, #415d60);
+	background: linear-gradient(#47c1d1, #415d60);
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#submit:hover,
+#submit:focus {
+	background: -webkit-linear-gradient( #415d60, #47c1d1);
+	background: linear-gradient( #415d60, #47c1d1);
+	cursor: pointer;
+}

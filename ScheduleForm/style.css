@@ -1,0 +1,42 @@
+body {
+	font-family: Helvetica;
+	font-weight: 300;
+	/*
+	background: -webkit-linear-gradient(#8569CD,#6C8ECD) no-repeat;
+	background: linear-gradient(#8569CD,#6C8ECD) no-repeat;
+*/
+}
+
+#wrapper {
+	width: 70%;
+	margin: 60px auto 0px auto;
+	padding: 10px 0 110px 0px;
+	border: solid 1px red;
+}
+
+form {
+	width: 60%;
+	margin: 0 auto;
+	border: solid 1px green;
+}
+
+section.inputuser {
+	width: 100%;
+	margin: 40px auto 40px auto;
+}
+
+.blockinput {
+	display: block;
+	padding: 10px 0 5px 0;
+	margin: 10px auto 0 auto;
+}
+
+input[type="text"] {
+	display: block;
+	width: 95%;
+}
+
+.datetime {
+	display: block;
+	width: 10%;
+}
