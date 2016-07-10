@@ -2,44 +2,55 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Schedule Form</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Schedule Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div id="wrapper">
-		<h1>Schedule Meeting</h1>
-		<form action="#">
-			<section class="inputuser">
-				<label class="blockinput" for="">Name</label>
-				<input type="text">
-				<label class="datetime date" for="">When</label>
-				<input type="date">
-				<label class="datetime time" for="">Time</label>
-				<input type="time">
-				<label class="blockinput" for="">People to invite</label>
-				<input type="search">
+<div id="wrapper">
+    <h1>Schedule Meeting</h1>
+    <form action="#">
+        <section class="inputuser">
 
-				<div id="pic">
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
-				</div>
-			</section>
-			<section>
-				<div class="attendies">
-					<p><img src="" alt="">Alex S.</p>
-					<p><img src="" alt="">Alex S.</p>
-					<p><img src="" alt="">Alex S.</p>
-				</div>
-			</section>
-			<section>
-				<input type="checkbox"><span>Notify people on Facebook of this meeting?</span>
-				<button>Create Meeting</button>
-			</section>
-		</form>
-	</div>
+            <label class="blockinput" for="text">Name</label>
+            <input type="text" id="text"><br>
+            <label class="datetime date" for="date">When</label>
+            <input type="date" id="date"><br>
+            <label class="datetime time" for="time">Time</label>
+            <input type="time" id="time"><br>
+
+            <div class="search-person">
+                <label class="blockinput" for="search">People to invite</label><br>
+                <input type="search" id="search" autocomplete="on" placeholder="max mustermann">
+                <button><i for="search" class="fa fa-search" aria-hidden="true" ></i></button>
+            </div>
+
+            <div id="pic">
+               <h3>People invited</h3>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+        </section>
+        <section>
+            <div class="attendies">
+               <ul>
+               		<li><img src="https://randomuser.me/api/portraits/men/6.jpg" alt=""><br>Max</li>
+               		<li><img src="https://randomuser.me/api/portraits/men/70.jpg" alt=""><br>Sam</li>
+               		<li><img src="https://randomuser.me/api/portraits/women/24.jpg" alt=""><br>Christine</li>
+               </ul>
+            </div>
+        </section>
+           <div class="notify">
+            <input type="checkbox">
+            <span>Notify people on Facebook of this meeting?</span><br>
+            <button class="create-meeting">Create Meeting</button>
+            </div>
+            </form>
+</div>
 </body>
 
 </html>
