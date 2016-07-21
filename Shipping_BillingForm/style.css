@@ -115,7 +115,7 @@ input[type="number"] {
 	border-radius: 5px;
 }
 
-span {
+label {
 	display: inline;
 	text-align: center;
 	padding: 15px 20px;
@@ -124,8 +124,8 @@ span {
 	border-radius: 5px;
 }
 
-span:hover,
-span:focus {
+label:hover,
+label:focus {
 	font-size: 1.2em;
 	color: #696969;
 	text-shadow: 5px 5px 10px #757b81;
