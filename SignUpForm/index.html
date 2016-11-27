@@ -8,20 +8,18 @@
 </head>
 
 <body>
-	<div class="form-container">
+		<div class="form-container">
 	<h1>Sign up</h1>
 	<p>Who are you?</p><p>Please fill out the form</p>
-		<form action="#">
-			<label for="#"><input type="text" placeholder="Firstname"></label>
-			<label for="#"><input type="text" placeholder="Lastname"></label>
-			<label for="#"><input type="email" placeholder="Email"></label>
-			<label for="#"><input type="date" placeholder="Birthday"></label>
-			<label for="#"><input type="password" placeholder="Password"></label>
-			<input class="btn-send" type="submit" value="Send">
-
+		<form id="form_signUp" action="#" method="get">
+			<label for="firstName"><input id="firstName" type="text" placeholder="Firstname" required></label>
+			<label for="lastName"><input id="lastName" type="text" placeholder="Lastname" required></label>
+			<label for="email"><input id="email" type="email" placeholder="Email" required></label>
+			<label for="date"><input id="date" type="date" placeholder="Birthday"></label>
+			<label for="password"><input id="password" type="password" placeholder="Password" required></label>
+			<input id="btn-send" type="submit" value="Send" />
 		</form>
 	</div>
-
 </body>
 
 </html>
