@@ -65,7 +65,7 @@ p {
 	color: #7383B6;
 }
 
-.form-container form .btn-send {
+.form-container form #btn-send {
 	margin-top: 90px;
 	background: -webkit-linear-gradient(left, #ED4A5F, #F47B36);
 	background: linear-gradient(to right, #ED4A5F, #F47B36);
