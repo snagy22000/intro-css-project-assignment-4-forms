@@ -1,0 +1,37 @@
+.password {
+  line-height: 1.5rem;
+  width: 5%;
+  border: 1px solid #3498db;
+  text-align:center;
+  transition: all 1s;
+  color: #34495e;
+}
+
+.password:focus,
+.password:active{
+  width:20%;
+}
+
+
+.button {
+  line-height: 1.5rem;
+  width: 60px;
+  background-color: #3498db;
+  border: 1px solid #bbb;
+  outline: none;
+  color: #fff;
+  transition: all 200ms;
+
+}
+
+.button:hover{
+  width:10%;
+  box-shadow: 1px 1px 2px #2980b9;
+}
+
+.button:active
+{
+  position: relative;
+  top: 0.5px;
+  box-shadow: none;
+}
