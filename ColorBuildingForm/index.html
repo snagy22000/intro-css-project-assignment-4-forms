@@ -4,27 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Color building form</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="validator.js" defer="defer" ></script>
 </head>
 <body>
-<header>
-	<h1><span>The Color Slider</span><br>RGBA(211,206,13,0.9)</h1>
+<header id="header">
+	<h1><span>The Color Slider</span><br><span id="colorNumber" style="text-transform: uppercase"></span></h1>
 </header>
 	<main>
 			<div id="colorfield"></div>
-			<form action="#">
-				
-				<div class="box red">
+			<form id="colorForm" action="#">
 				<label class="redlbl" for="red"> red
-				<input id="red" type="range" name="red" min="0" max="255" step="5" ></label></div>
+				<input class="rangeSlider" id="red" type="range" name="red" min="0" max="255" step="5" value="0" ></label>
 				
 				<label class="greenlbl"  for="green"> green
-				<input id="green" type="range" name="green" min="0" max="255" step="5" ></label>
+				<input class="rangeSlider" id="green" type="range" name="green" min="0" max="255" step="5" value="0" ></label>
 
 				<label class="bluelbl"  for="blue"> blue
-				<input id="blue" type="range" name="blue" min="0" max="255" step="5" ></label>
+				<input class="rangeSlider" id="blue" type="range" name="blue" min="0" max="255" step="5" value="0" ></label>
 							
 				<label for="alpha">alpha channel
-        <input type="range" id="alpha" name="alpha" min="0" max="1" step=".1"></label>
+        <input class="rangeSlider" type="range" id="alpha" name="alpha" min="0" max="1" step=".1" value="1"></label>
 								
 			</form>
 	</main>
