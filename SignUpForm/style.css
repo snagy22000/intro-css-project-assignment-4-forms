@@ -1,113 +1,126 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Lucida Console", Monaco, monospace;
+	box-sizing : border-box;
+	font-family : 'Lucida Console', Monaco, monospace;
+	margin : 0;
+	padding : 0;
 }
 
 body {
-	background-color: #333333;
+	background-color : #333333;
 }
 
 .form-container {
-	width: 800px;
-	height: 940px;
-	background-color: #292F47;
-	margin: 0 auto;
-	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.71);
+	background-color : #292f47;
+	box-shadow : 3px 3px 15px rgba(0, 0, 0, .71);
+	height : 940px;
+	margin : 0 auto;
+	width : 800px;
 }
 
 h1 {
-	text-align: center;
-	color: #fff;
-	padding-top: 80px;
-	margin: 20px 200px;
-	font-size: 440%;
-	font-weight: 100;
+	color : #ffffff;
+	font-size : 440%;
+	font-weight : 100;
+	margin : 20px 200px;
+	padding-top : 80px;
+	text-align : center;
 }
 
 p {
-	text-align: center;
-	color: #7383B6;
-	text-transform: uppercase;
-	font-size: 150%;
+	color : #7383b6;
+	font-size : 150%;
+	text-align : center;
+	text-transform : uppercase;
 }
 
 .form-container form {
-	margin: 0 220px;
+	margin : 0 220px;
 }
 
 .form-container form input {
-	width: 100%;
-	display: block;
-	margin: 40px 0px;
-	padding: 20px 0px;
-	border-radius: 25px;
-	border: 1px solid #7383B6;
-	color: #fff;
-	font-size: 120%;
-	letter-spacing: 5px;
-	background-color: transparent;
-	text-align: center;
+	background-color : transparent;
+	border : 1px solid #7383b6;
+	border-radius : 25px;
+	color : #ffffff;
+	display : block;
+	font-size : 120%;
+	letter-spacing : 5px;
+	margin : 40px 0;
+	padding : 20px 0;
+	text-align : center;
+	width : 100%;
 }
 
 .form-container form input:hover,
 .form-container form input:active {
-	background: #fff;
-	color: #7383B6;
+	background : #ffffff;
+	color : #7383b6;
 }
 
 ::-webkit-input-placeholder {
-	color: #fff;
+	color : #ffffff;
 }
 
 :hover::-webkit-input-placeholder {
-	color: #7383B6;
+	color : #7383b6;
 }
 
 .form-container form #btn-send {
-	margin-top: 90px;
-	background: -webkit-linear-gradient(left, #ED4A5F, #F47B36);
-	background: linear-gradient(to right, #ED4A5F, #F47B36);
-	cursor: pointer;
+	background : -webkit-linear-gradient(left, #ed4a5f, #f47b36);
+	background :         linear-gradient(to right, #ed4a5f, #f47b36);
+	cursor : pointer;
+	margin-top : 90px;
 }
 
 @media screen and (max-width: 699px) {
-.form-container {
-		width: 100%;
-		height: 100%;
-		background-color: #292F47;
-		box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.71);
+	.form-container {
+		background-color : #292f47;
+		box-shadow : 3px 3px 15px rgba(0, 0, 0, .71);
+		height : 100%;
+		width : 100%;
 	}
 	h1 {
-		text-align: center;
-		color: #fff;
-		padding-top: 30px;
-		margin: 0 0;
-		font-size: 350%;
-		font-weight: 100;
+		color : #ffffff;
+		font-size : 350%;
+		font-weight : 100;
+		margin : 0 0;
+		padding-top : 30px;
+		text-align : center;
 	}
 	p {
-		text-align: center;
-		color: #7383B6;
-		text-transform: uppercase;
-		font-size: 110;
-		margin-top: 20px;
+		color : #7383b6;
+		font-size : 110;
+		margin-top : 20px;
+		text-align : center;
+		text-transform : uppercase;
 	}
 	.form-container form {
-		margin: 50px 0;
+		margin : 50px 0;
 	}
 	.form-container form input {
-		width: 100%;
-		display: block;
-		margin: 40px 0px;
-		padding: 20px 0px;
-		border-radius: 25px;
-		border: 1px solid #7383B6;
-		color: #fff;
-		font-size: 80%;
-		letter-spacing: 5px;
-		background-color: transparent;
-		text-align: center;
+		background-color : transparent;
+		border : 1px solid #7383b6;
+		border-radius : 25px;
+		color : #ffffff;
+		display : block;
+		font-size : 80%;
+		letter-spacing : 5px;
+		margin : 40px 0;
+		padding : 20px 0;
+		text-align : center;
+		width : 100%;
 	}
 }
+
+
+/* Custom CSS Attributes via JS Script */
+
+.valid {
+	border : 1px solid rgba(57, 255, 37, .5);
+}
+
+.invalid {
+	border : 1px solid rgba(255, 17, 16, .5);
+}
+
+

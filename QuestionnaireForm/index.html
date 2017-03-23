@@ -10,35 +10,37 @@
 <body>
 	<main>
 		<h1><span class="game-text">street jumper</span>online game</h1>
-		<form action="#">
-		
-			<label class="email" for="email">Your email! </label>
-			<input id="email" class="email" type="email" required>
-			
+		<form action="#" id="formQuestions">
+
+			<label class="email" for="inpEmail">Your email! </label>
+			<input id="inpEmail" class="email" type="email" required>
+
 			<legend>Please rate our online game!<br>
 			<input id="check-verygood" type="radio" name="rateit" value="very good" checked>
-			<label  class="rateit" for="check-verygood">very good</label>
+			<label  class="inpRateIt" for="check-verygood">very good</label>
 			<input id="check-good" type="radio" name="rateit" value="good" checked>
-			<label class="rateit" for="check-good">good</label>
+			<label class="inpRateIt" for="check-good">good</label>
 			<input id="check-bad" type="radio" name="rateit" value="bad" checked>
-			<label class="rateit" for="check-bad">bad</label>
-			<input id="check-verybad" type="radio" name="rateit" value="very bad" checked>
-			<label class="rateit" for="check-verybad">very bad</label></legend>
-			
+			<label class="inpRateIt" for="check-bad">bad</label>
+			<input id="check-verybad" type="radio" name="rateit" value="very bad" >
+			<label class="inpRateIt" for="check-verybad">very bad</label></legend>
+
 			<legend>Do you have any suggestions to this game! <br>Please leave a message.</legend><br>
-			
-			<input id="check-yes" type="radio" name="comment" value="yes" checked>
-			<label class="rateit" for="check-yes">no</label>
 
 			<input id="check-no" type="radio" name="comment" value="no" checked>
-			<label class="rateit"  for="check-no">yes</label>
-			
-			<textarea name="usercomment" id="usercomment" placeholder="Please use this area for any comment"></textarea>
-			
+			<label class="rateit" for="check-no">no</label>
+
+			<input id="check-yes" type="radio" name="comment" value="yes" checked>
+			<label class="rateit"  for="check-yes">yes</label>
+
+			<textarea name="usercomment" id="usercomment" placeholder="Please use this area for any comment" ></textarea>
+
 			<input id="submit" type="submit" value="Send">
-		
+
 		</form>
 	</main>
+	<script src="../validator.js"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>

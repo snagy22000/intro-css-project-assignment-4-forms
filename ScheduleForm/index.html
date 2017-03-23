@@ -9,48 +9,43 @@
 </head>
 
 <body>
-<div id="wrapper">
-    <h1>Schedule Meeting</h1>
-    <form action="#">
+    <div id="wrapper">
+        <h1>Scheduler</h1>
+       <form id="formSchedule"  method="post">
         <section class="inputuser">
 
-            <label class="blockinput" for="text">Name</label>
-            <input type="text" id="text"><br>
-            <label class="datetime date" for="date">When</label>
-            <input type="date" id="date"><br>
-            <label class="datetime time" for="time">Time</label>
-            <input type="time" id="time"><br>
+            <label class="blockinput" for="inpName">Name</label>
+            <input type="text" id="inpName"><br>
+            <label class="datetime date" for="inpDate">When</label>
+            <input type="date" id="inpDate"><br>
+            <label class="datetime time" for="inpTime">Available Time</label>
+            <input type="time" id="inpTime" min="10:00" max="17:00" ><br>
 
             <div class="search-person">
-                <label class="blockinput" for="search">People to invite</label><br>
-                <input type="search" id="search" autocomplete="on" placeholder="Search for people........">
-                <button><i for="search" class="fa fa-search" aria-hidden="true" ></i></button>
+                <label class="blockinput" for="inpSearch">People to invite</label><br>
+                <input type="search" id="inpSearch" autocomplete="on" placeholder="Search for people........">
+                <button id="btnSearch"><i class="fa fa-search" aria-hidden="true" ></i></button>
             </div>
 
-            <div id="pic">
-               <h3>People invited</h3>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
+            </section>
+            <section>
+                <div class="attendees">
+                    <ul>
+                        <li><img src="https://randomuser.me/api/portraits/men/6.jpg" alt=""><br>Max</li>
+                        <li><img src="https://randomuser.me/api/portraits/men/70.jpg" alt=""><br>Sam</li>
+                        <li><img src="https://randomuser.me/api/portraits/women/24.jpg" alt=""><br>Christine</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="notify">
 
-        </section>
-        <section>
-            <div class="attendies">
-               <ul>
-               		<li><img src="https://randomuser.me/api/portraits/men/6.jpg" alt=""><br>Max</li>
-               		<li><img src="https://randomuser.me/api/portraits/men/70.jpg" alt=""><br>Sam</li>
-               		<li><img src="https://randomuser.me/api/portraits/women/24.jpg" alt=""><br>Christine</li>
-               </ul>
+                <label for="meeting"><input type="checkbox"  id="chbxMeeting">Notify people on Facebook</label><br>
+                <button id="submitMeeting" type="submit" class="create-meeting">Create Meeting</button>
             </div>
-        </section>
-           <div class="notify">
-            <input type="checkbox"  id="meeting">
-             <label for="meeting">Notify people on Facebook of this meeting?</label><br>
-             <button class="create-meeting">Create Meeting</button>
-            </div>
-            </form>
-</div>
+        </form>
+    </div>
+    <script src="../validator.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

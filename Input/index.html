@@ -4,7 +4,7 @@
   <style>
   .password {
   line-height: 1.5rem;
-  width: 5%;
+  width: 8%;
   border: 1px solid #3498db;
   text-align:center;
   transition: all 1s;
@@ -33,7 +33,8 @@
   box-shadow: 1px 1px 2px #2980b9;
 }
 
-.button:active
+.button:active,
+.button:focus
 {
   position: relative;
   top: 0.5px;
@@ -44,8 +45,8 @@
 <body>
 
 
-<div> 
-  <input type="text" name="inputandbutton" placeholder="Enter your Password" class="password" > 
+<div>
+  <input type="text" name="inputandbutton" placeholder="Enter your Password" class="password" >
   <button class="button">Submit</button>
 </div>
 </body>

@@ -1,36 +1,36 @@
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    color: #fff;
-    font-family: Montserrat, Helvetica;
-	font-weight: 600;
+	box-sizing : border-box;
+	color : #ffffff;
+	font-family : Montserrat, Helvetica;
+	font-weight : 600;
+	margin : 0;
+	padding : 0;
 }
 
 body {
-    width: 690px;
-	margin: 0 auto;
-    background-image: -webkit-linear-gradient(rgb(199, 199, 199), rgba(217, 217, 217, 0.92) 85%);
-    background-image: -webkit-linear-gradient(rgba(221, 221, 221, 0.62), rgba(230, 230, 230, 0.92) 85%);
-    background-image: linear-gradient(rgba(221, 221, 221, 0.62), rgba(230, 230, 230, 0.92) 85%)
+	background-image : -webkit-linear-gradient(rgb(199, 199, 199), rgba(217, 217, 217, .92) 85%);
+	background-image : -webkit-linear-gradient(rgba(221, 221, 221, .62), rgba(230, 230, 230, .92) 85%);
+	background-image :         linear-gradient(rgba(221, 221, 221, .62), rgba(230, 230, 230, .92) 85%);
+	margin : 0 auto;
+	width : 690px;
 }
 
 
 /*--------------- Form Element ------------*/
 
 .wrapper {
-		margin: 60px auto;
-    padding: 30px 80px;
-    width: 100%;
-    height: 800px;
-    background-image: -webkit-linear-gradient(bottom right, rgba(74, 74, 72, 0.81), rgba(8, 0, 98, 0.92) 85%), url(img/background.jpg);
-    background-image: linear-gradient(bottom right, rgba(74, 74, 72, 0.81), rgba(8, 0, 98, 0.92) 85%), url(img/background.jpg);
-    background-image: -webkit-linear-gradient(left, rgba(11, 5, 46, 0.86), rgba(21, 13, 77, 0.92), rgba(4, 13, 60, 0.89), rgba(14, 0, 44, 0.87) 85%), url(img/background.jpg);
-    background-image: linear-gradient(left, rgba(11, 5, 46, 0.86), rgba(21, 13, 77, 0.92), rgba(4, 13, 60, 0.89), rgba(14, 0, 44, 0.87) 85%), url(img/background.jpg);
-    background-image: -webkit-linear-gradient( left, rgba(11, 5, 46, 0.86), rgba(21, 13, 77, 0.92), rgba(4, 13, 60, 0.89), rgba(14, 0, 44, 0.87) 85%), url(img/background.jpg);
-    background-image: linear-gradient( to right, rgba(11, 5, 46, 0.86), rgba(21, 13, 77, 0.92), rgba(4, 13, 60, 0.89), rgba(14, 0, 44, 0.87) 85%), url(img/background.jpg);
-    background-size: cover;
-    box-shadow: 0px 30px 86px -6px black;
+	background-image : -webkit-linear-gradient(bottom right, rgba(74, 74, 72, .81), rgba(8, 0, 98, .92) 85%), url(img/background.jpg);
+	background-image :         linear-gradient(bottom right, rgba(74, 74, 72, .81), rgba(8, 0, 98, .92) 85%), url(img/background.jpg);
+	background-image : -webkit-linear-gradient(left, rgba(11, 5, 46, .86), rgba(21, 13, 77, .92), rgba(4, 13, 60, .89), rgba(14, 0, 44, .87) 85%), url(img/background.jpg);
+	background-image :         linear-gradient(left, rgba(11, 5, 46, .86), rgba(21, 13, 77, .92), rgba(4, 13, 60, .89), rgba(14, 0, 44, .87) 85%), url(img/background.jpg);
+	background-image : -webkit-linear-gradient( left, rgba(11, 5, 46, .86), rgba(21, 13, 77, .92), rgba(4, 13, 60, .89), rgba(14, 0, 44, .87) 85%), url(img/background.jpg);
+	background-image :         linear-gradient( to right, rgba(11, 5, 46, .86), rgba(21, 13, 77, .92), rgba(4, 13, 60, .89), rgba(14, 0, 44, .87) 85%), url(img/background.jpg);
+	background-size : cover;
+	box-shadow : 0 30px 86px -6px black;
+	height : 800px;
+	margin : 60px auto;
+	padding : 30px 80px;
+	width : 100%;
 }
 
 
@@ -38,60 +38,58 @@ body {
 
 h1,
 p {
-    	text-align: center;
-
-  margin: 50px auto;
+	margin : 50px auto;
+	text-align : center;
 }
 
 h1,
 p a {
-    text-transform: uppercase;
-    list-style-type: none;
-    text-decoration: none;
-    margin-right: 50px;
-    padding: 5px;
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 30px;
-    color: rgba(217, 217, 217, 0.42);
+	color : rgba(217, 217, 217, .42);
+	font-size : 30px;
+	font-weight : 400;
+	list-style-type : none;
+	list-style-type : none;
+	margin-right : 50px;
+	padding : 5px;
+	text-decoration : none;
+	text-transform : uppercase;
 }
 
 a:hover,
 a:focus,
 h1:focus,
 h1:hover {
-    color: white;
-    border-bottom: 2px solid rgb(48, 48, 255);
+	border-bottom : 2px solid rgb(48, 48, 255);
+	color : white;
 }
 
 form {
-    padding-top: 20px;
+	padding-top : 20px;
 }
 
 .descr {
-    color: rgba(217, 217, 217, 0.92);
-    text-transform: uppercase;
-    font-size: 12px;
+	color : rgba(217, 217, 217, .92);
+	font-size : 12px;
+	text-transform : uppercase;
 }
 
 .box {
-    margin: 20px -10px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.14);
-    border-radius: 25px;
-    width: 500px;
-    border: none;
+	background : rgba(255, 255, 255, .14);
+	border : none;
+	border-radius : 25px;
+	margin : 20px -10px;
+	padding : 20px;
+	width : 500px;
 }
 
 .box:hover,
 .box:focus {
-  background: rgba(255, 255, 255, 0.4);
-
+	background : rgba(255, 255, 255, .4);
 }
 
 span {
-    margin-left: 15px;
-    font-size: 14px;
+	font-size : 14px;
+	margin-left : 15px;
 }
 
 /*.container2 p {
@@ -99,23 +97,38 @@ span {
 }*/
 
 .submit {
-    padding: 10px 20px;
-    background: rgba(48, 48, 255, 0.48);
-		font-weight: 700;
-    border-radius: 25px;
-    width: 500px;
-    border: none;
-    text-transform: uppercase;
-    font-size: 14px;
-	-webkit-transition: background-color ;
-	transition: background-color ;
-	cursor: pointer;
+	background : rgba(48, 48, 255, .48);
+	border : none;
+	border-radius : 25px;
+	cursor : pointer;
+	font-size : 14px;
+	font-weight : 700;
+	padding : 10px 20px;
+	text-transform : uppercase;
+	-webkit-transition : background-color ;
+	        transition : background-color ;
+	width : 500px;
 }
 
 
 .submit:hover,
 .submit:active {
-	background: #fff;
-	color: rgb(48, 48, 255);
-	-webkit-transition: background 0.5s ease ;
+	background : #ffffff;
+	color : rgb(48, 48, 255);
+	-webkit-transition : background .5s ease ;
+}
+
+
+/* Custom CSS Attributes via JS Script */
+
+input:valid {
+	border : 1px solid rgba(57, 255, 37, .5);
+}
+
+input:invalid {
+	border : 1px solid rgba(255, 17, 16, .5);
+}
+
+.descr.inforegister {
+	visibility : hidden;
 }

@@ -6,7 +6,7 @@
 /* IIFE */
 
 (function () {
-  "use strict";
+  'use strict';
 
   var inpCardHolder     =  document.querySelector('#holder');
   var inpCardNumber     =  document.querySelector('#number');
@@ -14,45 +14,45 @@
   var inpCCV            =  document.querySelector('#ccv');
 
   function inputIsEmpty(inputElement) { // Check on Empty Fields
-    return Validator.isEmpty(inputElement.value) || inputElement.value === null || inputElement.value.length <= 2; // if empty return false
+    return validator.isEmpty(inputElement.value) || inputElement.value === null || inputElement.value.length <= 2; // if empty return false
   }
 
-  function checkCardHolder ( event ) {
-    if( inputIsEmpty(event.target))  {
+  function checkCardHolder( event ) {
+    if ( inputIsEmpty(event.target))  {
       document.frmNameSubmit.Submit.setAttribute('disabled', 'disabled');
       event.target.setCustomValidity('Please use none Alphanumeric Characters');
-    }else {
+    } else {
       document.frmNameSubmit.Submit.removeAttribute( 'disabled' );
       event.target.setCustomValidity( '' );
     }
   }
 
-  function checkCardNumber ( event ) {
-    if( !Validator.isCreditCard(event.target.value) || inputIsEmpty(event.target))  {
+  function checkCardNumber( event ) {
+    if ( !validator.isCreditCard(event.target.value) || inputIsEmpty(event.target))  {
       document.frmNameSubmit.Submit.setAttribute('disabled', 'disabled');
       event.target.setCustomValidity('Please type the correct Credit Card Number in the Field');
-    }else {
-      document.frmNameSubmit.Submit.removeAttribute( 'disabled' );
-      event.target.setCustomValidity( '' );
-    }
-   }
-
-   function checkCardDate ( event ) {
-    var today = new Date();
-    if( !Validator.isAfterDate(event.target.value, today) || inputIsEmpty(event.target))  {
-      document.frmNameSubmit.Submit.setAttribute('disabled', 'disabled');
-      event.target.setCustomValidity('Card Date is not correct ');
-    }else {
+    } else {
       document.frmNameSubmit.Submit.removeAttribute( 'disabled' );
       event.target.setCustomValidity( '' );
     }
   }
 
-  function checkCCV ( event ) {
-    if( !Validator.isLength(event.target.value, 3 ))  {
+  function checkCardDate( event ) {
+    var today = new Date();
+    if ( !validator.isAfterDate(event.target.value, today) || inputIsEmpty(event.target))  {
+      document.frmNameSubmit.Submit.setAttribute('disabled', 'disabled');
+      event.target.setCustomValidity('Card Date is not correct ');
+    } else {
+      document.frmNameSubmit.Submit.removeAttribute( 'disabled' );
+      event.target.setCustomValidity( '' );
+    }
+  }
+
+  function checkCCV( event ) {
+    if ( !validator.isLength(event.target.value, 3 ))  {
       document.frmNameSubmit.Submit.setAttribute('disabled', 'disabled');
       event.target.setCustomValidity(' Please type the correct CCV Number');
-    }else {
+    } else {
       document.frmNameSubmit.Submit.removeAttribute( 'disabled' );
       event.target.setCustomValidity( '' );
     }
@@ -60,7 +60,7 @@
 
   document.frmNameSubmit.Submit.addEventListener('submit', function ( event ) {
     event.preventDefault();
-    console.log("Thanks for Shopping");
+    console.log('Thanks for Shopping');
   });
 
 
@@ -68,5 +68,5 @@
   inpCardNumber.addEventListener('blur', checkCardNumber);
   inpCardExpireDate.addEventListener('blur', checkCardDate);
   inpCCV.addEventListener('blur', checkCCV);
-
 }()); // Close MAIN IIFE
+

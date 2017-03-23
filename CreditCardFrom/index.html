@@ -6,34 +6,34 @@
 	<title>Credit Card Form</title>
 	<link rel="stylesheet" href="http://cdn.jsdelivr.net/normalize/3.0.3/normalize.min.css">
 	<link rel="stylesheet" href="style.css">
+  <script src="../validator.js" defer="defer" ></script>
+  <script src="script.js" defer="defer" ></script>
 </head>
 
 <body>
-	<form action="#">
+	<form action="#" name="frmNameSubmit">
 		<fieldset class="header">
 			<h1>Checkout</h1>
 			<p><i href=""></i></p>
 		</fieldset>
-		<div class="form-container">
+		<div class="form-container" id="frmCreditCard" name="frmNameLogin">
 			<fieldset class="cardinfo">
 				<legend>Credit Card Detail</legend>
 				<label for="holder">Card Holder</label>
 				<input  class="controll-card" type="text" id="holder">
 
 				<label for="number">Card Number</label>
-				<input class="controll-card" type="text" id="number">
+				<input class="controll-card" type="number" id="number">
 
 				<label for="date">Expire Date</label>
-				<input class="controll-card" type="text" id="date">
-
+				<input class="controll-card" type="month"  id="date">
 
 				<label for="ccv">CCV</label>
-				<input class="controll-card" type="number" id="ccv">
+				<input id="ccv" class="controll-card" type="number" placeholder="CCV" min="100" max="999">
 			</fieldset>
-			<button id="submit">Pay Now</button>
+			<button id="submit" name="Submit">Pay Now</button>
 		</div>
 	</form>
-
 </body>
 
 </html>

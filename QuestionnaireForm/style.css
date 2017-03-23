@@ -1,190 +1,196 @@
 /* HTML BASE SETUP */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Futura, Segoe UI;
-	line-height: normal !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Futura, Segoe UI;
+  line-height: normal !important;
 }
 
 html {
-	background: url(img/bg-City.png),#93DFDC ;
-	width: 1238px;
-	height: 100%;
-	margin: 0 auto;
-	background-size: cover ;
+  background: url(img/bg-City.png), #93DFDC;
+  width: 1238px;
+  height: 100%;
+  margin: 0 auto;
+  background-size: cover;
 }
 
 main {
-	width: 50%;
-	margin: 1em auto;
-	background: rgba(255, 255, 255, 0.31);
+  width: 50%;
+  margin: 1em auto;
+  background: rgba(255, 255, 255, 0.31);
 }
 
 /* TITLE SETUP */
 
 h1 {
-	color: #ffff00;
-	font-size: 3em;
-	text-shadow: 1px 2px 3px #ffc400;
-	text-align: center;
-	text-transform: uppercase;
+  color: #ffff00;
+  font-size: 3em;
+  text-shadow: 1px 2px 3px #ffc400;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .game-text {
-	display: block;
-	color: #fff;
-	text-shadow: 2px 6px 2px #ffc400;
+  display: block;
+  color: #fff;
+  text-shadow: 2px 6px 2px #ffc400;
 }
-
 
 /* FORM SETUP */
 
 form {
-	margin: 30px 0 0 0;
-	padding: 50px 50px;
-	box-shadow: -0px -5px 10px rgba(103, 103, 103, 0.52), 10px 10px 13px rgba(49, 49, 49, 0.68);
+  margin: 30px 0 0 0;
+  padding: 50px 50px;
+  box-shadow: -0px -5px 10px rgba(103, 103, 103, 0.52), 10px 10px 13px rgba(49, 49, 49, 0.68);
 }
 
 label,
 input,
 legend,
 textarea {
-	display: inline-block;
-	font-size: 1.0em;
-	font-family: Futura, Segoe UI;
-	padding: 15px 10px;
-	font-weight: 600;
-	color: #6c6c6c;
-	box-shadow: 10px 5px 5px rgba(103, 103, 103, 0.52);
+  display: inline-block;
+  font-size: 1.0em;
+  font-family: Futura, Segoe UI;
+  padding: 15px 10px;
+  font-weight: 600;
+  color: #6c6c6c;
+  box-shadow: 10px 5px 5px rgba(103, 103, 103, 0.52);
+}
 
+input#inpEmail {
+  width: 54%;
 }
 
 label.email,
-legend{
-	background: rgba(255, 196, 0, 0.68);
-	margin-bottom: 30px;
+legend {
+  background: rgba(255, 196, 0, 0.68);
+  margin-bottom: 30px;
 }
 
 label.rateit {
-	background: #fff;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10%;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10%;
 }
-
 
 textarea {
-	display: block;
+  display: block;
 }
 
-
 #submit {
-	display: inline-block;
-	color: white;
-	background: #1CB67C;
-	padding: 15px 60px;
-	margin: 40px 30%;
-	border-radius: 5px;
-	border: solid 5px rgba(11, 118, 78, 0.13);
-	cursor: pointer;
+  display: inline-block;
+  color: white;
+  background: #1CB67C;
+  padding: 15px 60px;
+  margin: 40px 30%;
+  border-radius: 5px;
+  border: solid 5px rgba(11, 118, 78, 0.13);
+  cursor: pointer;
 }
 
 #submit:hover,
 #submit:active {
-	color: #1CB67C;
-	background: #fff;
-	
+  color: #1CB67C;
+  background: #fff;
+
+}
+
+@media screen and (max-width: 800px) {
+
+  main {
+    width: 50%;
+    height: 100%;
+    margin: 20px 6%;
+    background: rgba(255, 255, 255, 0.31);
+  }
+
+  label,
+  input,
+  legend,
+  textarea {
+    display: inline-block;
+    font-size: .9em;
+    font-family: Futura, Segoe UI;
+    padding: 10px 5px;
+    font-weight: 400;
+    color: #6c6c6c;
+    box-shadow: 10px 5px 5px rgba(103, 103, 103, 0.52);
+  }
+
+  textarea {
+    display: block;
+  }
+}
+
+/* Custom CSS Attributes via JS Script */
+
+input:valid {
+	border : 1px solid rgba(57, 255, 37, .5);
+}
+
+input:invalid {
+	border : 1px solid rgba(255, 17, 16, .5);
 }
 
 
-@media screen and (max-width: 800px){
 
+@media screen and (max-width: 590px) {
 
-	
-	main {
-		width: 50%;
-		height: 100%;
-		margin: 20px 6%;
-		background: rgba(255, 255, 255, 0.31);
-	}
-	
-	label,
-	input,
-	legend,
-	textarea {
-		display: inline-block;
-		font-size: .9em;
-		font-family: Futura, Segoe UI;
-		padding: 10px 5px;
-		font-weight: 400;
-		color: #6c6c6c;
-		box-shadow: 10px 5px 5px rgba(103, 103, 103, 0.52);
-	}
-	
-	textarea {
-		display: block;
-	}
-}
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
 
-@media screen and (max-width: 590px){
+  body {
+    background: url(img/bg-City.png), #93DFDC;
+    background-size: cover;
+  }
 
-h1 {
-	font-size: 2em;
-	text-transform: uppercase;
-}	
-	
-body {	
-	background: url(img/bg-City.png) ,#93DFDC ;
-	background-size: cover;
-}	
-	
-	main {
-		width: 520px;
-		margin: 0 0;
-		background: rgba(255, 255, 255, 0.31);
-	}
-	
-	form {
-	margin: 30px 0px;
-	padding: 50px 70px;
-	box-shadow: -0px -5px 10px rgba(103, 103, 103, 0.52), 10px 10px 13px rgba(49, 49, 49, 0.68);
-}
+  main {
+    width: 520px;
+    margin: 0 0;
+    background: rgba(255, 255, 255, 0.31);
+  }
 
-	
-	label,
-input,
-legend,
-textarea {
-	display: block;
-	font-size: .8em;
-	color: #6c6c6c;
+  form {
+    margin: 30px 0px;
+    padding: 50px 70px;
+    box-shadow: -0px -5px 10px rgba(103, 103, 103, 0.52), 10px 10px 13px rgba(49, 49, 49, 0.68);
+  }
+
+  label,
+  input,
+  legend,
+  textarea {
+    display: block;
+    font-size: .8em;
+    color: #6c6c6c;
+  }
+
+  label.email,
+  legend {
+    background: rgba(255, 196, 0, 0.68);
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  input[type="radio"],
+  label.rateit {
+    display: inline-block !important;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    width: 40px;
+  }
+
+  input[type="email"] {
+    width: 190px;
+    margin-bottom: 10px;
+  }
 
 }
-	
-label.email,
-legend{
-	background: rgba(255, 196, 0, 0.68);
-	margin-bottom: 10px;
-	width: 100%;
-}
 
-input[type="radio"],
-label.rateit {
-	display: inline-block !important;
-	background: #fff;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10%;
-	width: 40px;
-}
-
-	
-	input[type="email"]{
-		width: 190px;
-		margin-bottom: 10px;
-	}	
-
-
-}

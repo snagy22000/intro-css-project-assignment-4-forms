@@ -1,0 +1,27 @@
+{
+  "name": "project-assignment-4-forms.moderndeveloper-intro-css",
+  "version": "1.0.0",
+  "description": "Link : [SignUp Form](https://htmlpreview.github.io/?https://github.com/snagy22000/project-assignment-4-forms.moderndeveloper-intro-css/blob/master/SignUpForm/index.html)",
+  "main": "validator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snagy22000/project-assignment-4-forms.moderndeveloper-intro-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snagy22000/project-assignment-4-forms.moderndeveloper-intro-css/issues"
+  },
+  "homepage": "https://github.com/snagy22000/project-assignment-4-forms.moderndeveloper-intro-css#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "browser-sync": "^2.18.8",
+    "csscomb": "^4.0.1",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-es5": "^1.1.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}

@@ -10,20 +10,18 @@
 
 <body>
 	<div id="wrapper">
-		<form action="#">
+		<form id="billing_Form">
 			<fieldset>
 				<legend>Contact Information</legend>
-				<input type="text" placeholder="First Name" required>
-				<input type="text" placeholder="Last Name" required>
-				<input type="text" placeholder="E-Mail" required>
-				<input type="text" placeholder="Phone Number">
-				<input type="text" placeholder="Street Address" required>
-				<input type="text" placeholder="Apt./Suite">
-				<input type="text" placeholder="City" required>
-				<input type="text" placeholder="State" required>
-				<input type="text" placeholder="Zip Code" required><br>
-				<input type="checkbox" id="confirm" name="addressconfirm" value="addressconfirm">
-				<label for="confirm">Please confirm the shipping address!</label>
+				<input id="inpFName" type="text" placeholder="First Name" required="">
+				<input id="inpLName" type="text" placeholder="Last Name" required="">
+				<input id="inpEmail" type="email" placeholder="E-Mail" required="">
+				<input id="inpPhone" type="text" placeholder="Phone Number">
+				<input id="inpAddress" type="text" placeholder="Street Address" required="">
+				<input id="inpSuite" type="number" placeholder="Apt./Suite">
+				<input id="inpCity" type="text" placeholder="City" required="">
+				<input id="inpState" type="text" placeholder="State" required="">
+				<input id="inpZipCode" type="number" placeholder="Zip Code" required=""><br>
 				<br>
 				</fieldset>
 
@@ -33,21 +31,20 @@
 				<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
 				<i class="fa fa-cc-amex" aria-hidden="true"></i>
 				<br>
-				<input type="number" placeholder="Card Number" required>
-				<input type="date" placeholder="Expiration Date" required>
-				<input type="text" placeholder="Card Holder" required>
+				<input id="inpCredC" type="number" placeholder="Card Number" required>
+				<input id="inpExDate" type="date" placeholder="Expiration Date" required>
+				<input id="inpCredHolder" type="text" placeholder="Card Holder" required>
 
-				<input type="number" placeholder="CCV" required>
+				<input id="inpCCV" type="number" placeholder="CCV" min="100" max="999" required>
 
-				<button id="submit" value="submit"><i class="fa fa-lock" aria-hidden="true"></i> Submit
-				</button>
-
-
+				<input id="btnsubmit" type="submit" value="submit"><i class="fa fa-lock" aria-hidden="true"></i> Submit
 
 			</fieldset>
 		</form>
-
 	</div>
+
+	<script src="../validator.js"></script>
+	<script src="./script.js" ></script>
 </body>
 
 </html>
