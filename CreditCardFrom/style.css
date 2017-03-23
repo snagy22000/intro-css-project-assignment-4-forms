@@ -41,6 +41,7 @@ fieldset h1 {
 	font-weight : 200;
 	text-align : center;
 	text-transform : uppercase;
+	margin: 50px auto;
 }
 
 fieldset legend {
